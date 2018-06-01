@@ -3,26 +3,19 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Shovan's Github</title>
 		<style type="text/css">
-		.wrapper {
-		    width: 980px;
-		    display: block;
-		    position: relative;
-		    margin-left: auto;
-		    margin-right: auto;
-		}
+
 
 		.img-holder {
-		    position: relative;
-		    height: 360px;
-		    display: block;
-		    transform: matrix(1, -0.3, 0.9, 1, 0, 0);
+			transform: matrix(1, -0.3, 0.9, 1, 0, 0);
+			height: 200px;
+			width: auto;
+			margin-top: 160px;
 		}
 
 		.img-holder img {
@@ -33,11 +26,13 @@
 		}
 
 		.img-holder img#ani-img-1 {
-		    top: 60px;
+				left: 0px;
+    		bottom: 0px;
 		}
 
 		.img-holder img#ani-img-2 {
-		    left: 100px;
+				left: 60px;
+    		bottom: 40px;
 		    animation-name: movedivup;
 		    animation-duration: 2s;
 		    animation-iteration-count: 1;
@@ -47,18 +42,13 @@
 
 	@media (min-width: 320px) and (max-width: 480px) {
 
-	  .wrapper {
-	    width: 100%;
-	    margin-top: 210px;
-	    margin-left: 60px;
-	}
 
 	}
 
 
 		@keyframes movedivup {
-		    0%   {left: 0px; top: 60px}
-		    100% {left: 100px; top: 0px}
+		    0%   {left: 0; bottom: 0}
+		    100% {left: 60px; bottom: 40px}
 		}
 
 		</style>
@@ -67,7 +57,7 @@
   <!-- <img src="images/shovandigital-logo.svg" alt="Shovan Digital Logo" width="200px" height="auto" /> -->
 
   <div class="container">
-    <div class="row h-100 m-100">
+    <div class="row">
       <div>
 				<div class="img-holder col align-self-center">
 					<img id="ani-img-1" src="images/appkit1.jpg" />
