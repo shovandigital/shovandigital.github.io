@@ -1,63 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css" />
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<style type="text/css">
-	.wrapper {
-	    width: 980px;
-	    display: block;
-	    position: relative;
-	    margin-left: auto;
-	    margin-right: auto;
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Shovan's Github</title>
+		<style type="text/css">
+		.wrapper {
+		    width: 980px;
+		    display: block;
+		    position: relative;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		.img-holder {
+		    position: relative;
+		    height: 360px;
+		    display: block;
+		    transform: matrix(1, -0.3, 0.9, 1, 0, 0);
+		}
+
+		.img-holder img {
+		  width: auto;
+		  position: absolute;
+		  height: inherit;
+		  box-shadow: -9px 11px 20px 2px #9898988f;
+		}
+
+		.img-holder img#ani-img-1 {
+		    top: 60px;
+		}
+
+		.img-holder img#ani-img-2 {
+		    left: 100px;
+		    animation-name: movedivup;
+		    animation-duration: 2s;
+		    animation-iteration-count: 1;
+		    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+		}
+
+
+	@media (min-width: 320px) and (max-width: 480px) {
+
+	  .wrapper {
+	    width: 100%;
+	    margin-top: 210px;
+	    margin-left: 60px;
 	}
 
-	.img-holder {
-	    position: relative;
-	    height: 360px;
-	    display: block;
-	    transform: matrix(1, -0.3, 0.9, 1, 0, 0);
-	}
-
-	.img-holder img {
-	  width: auto;
-	  position: absolute;
-	  height: inherit;
-	  box-shadow: -9px 11px 20px 2px #9898988f;
-	}
-
-	.img-holder img#ani-img-1 {
-	    top: 60px;
-	}
-
-	.img-holder img#ani-img-2 {
-	    left: 100px;
-	    animation-name: movedivup;
-	    animation-duration: 2s;
-	    animation-iteration-count: 1;
-	    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 	}
 
 
-	@keyframes movedivup {
-	    0%   {left: 0px; top: 60px}
-	    100% {left: 100px; top: 0px}
-	}
+		@keyframes movedivup {
+		    0%   {left: 0px; top: 60px}
+		    100% {left: 100px; top: 0px}
+		}
 
-	</style>
+		</style>
+  </head>
+  <body>
+  <!-- <img src="images/shovandigital-logo.svg" alt="Shovan Digital Logo" width="200px" height="auto" /> -->
 
-	<!-- CSS dependencies -->
+  <div class="container">
+    <div class="row h-100 m-100">
+      <div>
+				<div class="img-holder col align-self-center">
+					<img id="ani-img-1" src="images/appkit1.jpg" />
+					<img id="ani-img-2" src="images/appkit2.jpg" />
+				</div>
+    </div>
+    </div>
+  </div>
 
-	<title>Darkout</title>
-</head>
-<body>
-<div class="wrapper">
-	<div class="img-holder">
-		<img id="ani-img-1" src="images/appkit1.jpg" />
-		<img id="ani-img-2" src="images/appkit2.jpg" />
-	</div>
-</div>
-</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
